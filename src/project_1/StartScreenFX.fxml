@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project_1.StartScreenController">
+   <top>
+      <HBox alignment="TOP_CENTER" prefHeight="15.0" prefWidth="600.0" spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="logoImage" fitHeight="72.0" fitWidth="86.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../enistein.jpg" />
+               </image>
+            </ImageView>
+            <Label prefHeight="85.0" prefWidth="541.0" text="Max LED Lighting" textAlignment="CENTER">
+               <font>
+                  <Font name="Times New Roman Bold" size="30.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="2.0" right="2.0" top="2.0" />
+         </padding>
+      </HBox>
+   </top>
+   <center>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="30.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="TOP_CENTER" prefHeight="38.0" prefWidth="600.0">
+               <children>
+                  <Label text="Input options :">
+                     <padding>
+                        <Insets right="33.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+                     <children>
+                        <ImageView fx:id="fileImage" fitHeight="59.0" fitWidth="65.0" onMouseClicked="#openFileOption" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../fileImage.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="File" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+                     <children>
+                        <ImageView fx:id="byHandImage" fitHeight="61.0" fitWidth="59.0" onMouseClicked="#EnterByKeyboardOption" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../byHandImage.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="Keyboard">
+                           <font>
+                              <Font name="Times New Roman" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+                     <children>
+                        <ImageView fx:id="randomImage" fitHeight="67.0" fitWidth="65.0" onMouseClicked="#RandomOption" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../randomImage.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="Random">
+                           <font>
+                              <Font name="Times New Roman" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="5.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
